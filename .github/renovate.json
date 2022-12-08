@@ -1,6 +1,18 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
+  "extends": ["config:base", ":preserveSemverRanges"],
+  "ignorePresets": [":dependencyDashboard"],
+  "semanticCommits": "enabled",
+  "commitMessageTopic": "{{depName}}",
+  "regexManagers": [
+    {
+      "fileMatch": ["^\\.pre-commit-hooks\\.yaml$", "^README\\.md$"],
+      "matchStrings": [
+        "\\b(Perl-Critic-|rev: v)(?<currentValue>\\d+\\.\\d+(\\.\\d+)?)[-.]"
+      ],
+      "depNameTemplate": "Perl::Critic",
+      "datasourceTemplate": "cpan",
+      "versioningTemplate": "perl"
+    }
   ]
 }
