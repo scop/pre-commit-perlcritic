@@ -11,3 +11,12 @@ Usage in `.pre-commit-config.yaml`:
   hooks:
     - perlcritic
 ```
+
+To include additional policies, append `additional_dependencies`
+to the above, for example:
+
+```yaml
+      additional_dependencies:
+        - KRYDE/Perl-Critic-Pulp-99.tar.gz
+        - PETDANCE/Perl-Critic-StricterSubs-0.06.tar.gz
+```
