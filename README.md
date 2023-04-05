@@ -9,5 +9,5 @@ Usage in `.pre-commit-config.yaml`:
 - repo: https://github.com/scop/pre-commit-perlcritic
   rev: v1.150-1
   hooks:
-    - perlcritic
+    - id: perlcritic
 ```
