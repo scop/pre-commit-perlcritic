@@ -14,8 +14,7 @@
         "\\b(Perl-Critic-|rev: v)(?<currentValue>\\d+\\.\\d+(\\.\\d+)?)[-.]"
       ],
       "depNameTemplate": "Perl::Critic",
-      "datasourceTemplate": "cpan",
-      "versioningTemplate": "perl"
+      "datasourceTemplate": "cpan"
     }
   ]
 }
