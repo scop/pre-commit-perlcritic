@@ -6,4 +6,5 @@
   entry: perlcritic
   args: [--quiet]
   types: [perl]
-  stages: [commit, merge-commit, push, manual]
+  stages: [pre-commit, pre-merge-commit, pre-push, manual]
+  minimum_pre_commit_version: 3.2.0 # for "stages" names
