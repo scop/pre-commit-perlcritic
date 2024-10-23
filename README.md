@@ -7,7 +7,7 @@ Usage in `.pre-commit-config.yaml`:
 
 ```yaml
 - repo: https://github.com/scop/pre-commit-perlcritic
-  rev: v1.154-1
+  rev: v1.156-1
   hooks:
     - id: perlcritic
 ```
