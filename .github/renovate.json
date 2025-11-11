@@ -1,12 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":preserveSemverRanges", ":semanticPrefixChore"],
-  "ignorePresets": [
-    ":dependencyDashboard",
-    ":semanticPrefixFixDepsChoreOthers"
+  "extends": [
+    "github>scop/common"
   ],
-  "semanticCommits": "enabled",
-  "commitMessageTopic": "{{depName}}",
   "regexManagers": [
     {
       "fileMatch": ["^\\.pre-commit-hooks\\.yaml$", "^README\\.md$"],
