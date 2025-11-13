@@ -3,9 +3,13 @@
   "extends": [
     "github>scop/common"
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["^\\.pre-commit-hooks\\.yaml$", "^README\\.md$"],
+      "customType": "regex",
+      "managerFilePatterns": [
+        ".pre-commit-hooks.yaml",
+        "README.md"
+      ],
       "matchStrings": [
         "\\b(Perl-Critic-|rev: v)(?<currentValue>\\d+\\.\\d+(\\.\\d+)?)[-.]"
       ],
