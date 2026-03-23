@@ -1,6 +1,7 @@
 # pre-commit-perlcritic
 
 [perlcritic](https://metacpan.org/dist/Perl-Critic) hook for
+[prek](https://prek.j178.dev) and
 [pre-commit](https://pre-commit.com).
 
 Usage in `.pre-commit-config.yaml`:
